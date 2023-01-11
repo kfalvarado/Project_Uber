@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Agregar Usuario</title>
+<style>
+
+fieldset {
+  background-color: #EEDEF1;
+  width: 100%;
+	  
+}
+
+legend {
+  background-color:#990CF4;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+  background: #572364;
+  border: none;
+  color: white;
+}
+
+
+</style>
+</head>
+
+
+<body style="background-color:#000000;">
+<font color="White"><h1>Agregar Usuario</h1></font>
+<form action = 'AgregarUsuario'  method = 'post'>
+<fieldset>
+<legend>Ingresa los datos del nuevo usuario Uber:</legend>
+<table>
+    <tr><td>Nombre:</td><td><input type='text' name='nombre'/></td></tr>
+    <tr><td>Contrasena:</td><td><input type='password' name='contrasena'/></td></tr>
+    <tr><td>Email:</td><td><input type='text' name='email'/></td></tr>
+    <tr><td>Estado en:</td><td>
+    <!--<select name="pais" style='width:150px'>!-->
+    <input type="text" name="estado" value="1" readonly onmousedown="return false;"/>
+    </select>
+    <tr><td colspan='2'><input type='submit' value='Guardar'/></td></tr>
+   
+    
+</table>
+</fieldset>
+</form>
+<br>
+ <a href='ConsultarUsuario'>
+        <input type="button" value="Consultar Usuario">
+    </a>
+ <a href=index.html>
+        <input type="button" value="Inicio de Sesion">
+    </a>
+</body>
+</html>
